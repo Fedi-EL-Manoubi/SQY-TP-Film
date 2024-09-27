@@ -1,5 +1,5 @@
 <?php
-require_once 'db_connection.php';
+require_once 'bdd_Connection.php';
 // verification
 if (isset($_POST['title'], $_POST['year'], $_POST['imdbID'])) {
     $title = $_POST['title'];

@@ -1,17 +1,16 @@
 <?php
-global $pdo;
-require_once 'db_connection';
+include('bdd_Connection.php');
 
-
-if(isset($_POST[id])){
+if (isset($_POST['id'])) {
     $id = $_POST['id'];
 
+    //  supprimer le favori
+    $query = $pdo->prepare("DELETE FROM favoris WHERE id = :id");
+    $query->bindParam(':id', $id);
+    $query->execute();
 
-    $stmt = $pdo->prepare('DELETE FROM favorites WHERE id = :id');
-    $stmt->execute(['id' => $id]);
-
-
-    echo 'Fav Supp !';
+    // Redirection suppr
+    header('Location: ../favorites.php');
+    exit();
 }
-
 ?>

@@ -1,0 +1,88 @@
+/* Style de base pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style pour le titre principal */
+h1 {
+    text-align: center;
+    color: #007acc;
+}
+
+/* Style pour les sous-titres */
+h2 {
+    color: #007acc;
+}
+
+/* Style pour le formulaire */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour l'input de recherche */
+#searchInput {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Style pour le bouton de recherche */
+button {
+    padding: 10px 15px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Effet de survol pour le bouton */
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Style pour la div de résultats */
+#result {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style pour chaque film affiché */
+.movie {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour la div des favoris */
+#favorites {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style pour les boutons de retrait des favoris */
+button.remove-favorite {
+    background-color: #e74c3c; /* Rouge pour le retrait */
+}
+
+button.remove-favorite:hover {
+    background-color: #c0392b;
+}
